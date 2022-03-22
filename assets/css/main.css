@@ -10715,5 +10715,11 @@ textarea.form-control-lg {
     display: block !important;
   }
 }
+#footer .logo-container {
+  max-width: 100px;
+}
+#footer .hover-effect:hover {
+  filter: brightness(80%);
+}
 
 /*# sourceMappingURL=main.css.map */
