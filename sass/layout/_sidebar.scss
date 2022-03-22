@@ -1,0 +1,115 @@
+// Start: Show/Hide Sidebar
+.sidebar--active {
+  margin-left: 0 !important;
+  #btn-sidebar {
+    left: 250px !important;
+  }
+}
+.content--active {
+  margin-left: 250px;
+}
+// End: Show/Hide Sidebar
+#sidebar {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin-left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: $primary;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+  transition: 0.4s;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  #btn-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    transition: 0.4s;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.2) !important;
+    &:hover,
+    &:active {
+      background-color: $primary !important;
+    }
+  }
+  &-overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .logo-container {
+    width: 120px;
+  }
+  // Start: Sidebar Hover and Click Effect
+  .nav-item.active > a {
+    background-color: $primary-light !important;
+  }
+  .nav-item > a:visited {
+    background-color: $primary;
+  }
+  .nav-item:hover > a {
+    background-color: $primary-light;
+  }
+  .dropdown-toggle.show {
+    background-color: $primary-light !important;
+  }
+  // End: Sidebar Hover and Click Effect
+  .dropdown-item {
+    position: relative;
+    padding-left: 48px;
+    transition: 0.2s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 0;
+      background-color: $primary;
+      transition: 0.2s;
+    }
+    &:hover {
+      color: $primary;
+      background-color: rgba(0, 0, 0, 0.05) !important;
+      padding-left: 52px;
+      &::before {
+        width: 4px;
+      }
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+    &:visited {
+      background-color: #fff;
+    }
+  }
+}
+#content {
+  transition: margin 0.4s;
+  // Start: Send Content to Back Sidebar
+  @media (max-width: 574px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100vw;
+  }
+  // End: Send Content to Back SideBar
+}
+@media (max-width: 574px) {
+  .sidebar-overlay--show {
+    display: block !important;
+  }
+}
