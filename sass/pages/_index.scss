@@ -1,0 +1,20 @@
+#tab {
+  .nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .nav-link {
+    transition: 0.4s;
+  }
+  .nav-link.active {
+    color: $white !important;
+    background-color: $primary;
+  }
+  .nav-link:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  #nav-tab {
+    border: 1px solid $gray-600;
+  }
+}

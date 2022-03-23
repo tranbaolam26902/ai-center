@@ -10601,6 +10601,34 @@ textarea.form-control-lg {
   background-color: #54880b !important;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #adb5bd;
+}
+
+.text-primary {
+  color: #66a103 !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.btn-sign {
+  width: 120px;
+}
+.btn-sign:hover {
+  filter: brightness(110%);
+}
+
 .sidebar--active {
   margin-left: 0 !important;
 }
@@ -10616,7 +10644,7 @@ textarea.form-control-lg {
   overflow-y: auto;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 4;
   margin-left: -250px;
   width: 250px;
   height: 100vh;
@@ -10631,7 +10659,7 @@ textarea.form-control-lg {
 }
 #sidebar #btn-sidebar {
   position: fixed;
-  top: 20px;
+  top: 14px;
   left: 0;
   transition: 0.4s;
   border: none;
@@ -10647,6 +10675,7 @@ textarea.form-control-lg {
 #sidebar-overlay {
   display: none;
   position: fixed;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
@@ -10720,6 +10749,25 @@ textarea.form-control-lg {
 }
 #footer .hover-effect:hover {
   filter: brightness(80%);
+}
+
+#tab .nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#tab .nav-link {
+  transition: 0.4s;
+}
+#tab .nav-link.active {
+  color: #fff !important;
+  background-color: #66a103;
+}
+#tab .nav-link:not(.active):hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#tab #nav-tab {
+  border: 1px solid #6c757d;
 }
 
 /*# sourceMappingURL=main.css.map */

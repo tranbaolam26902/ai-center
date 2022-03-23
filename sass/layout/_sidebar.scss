@@ -13,7 +13,7 @@
   overflow-y: auto;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 4;
   margin-left: -250px;
   width: 250px;
   height: 100vh;
@@ -27,7 +27,7 @@
   }
   #btn-sidebar {
     position: fixed;
-    top: 20px;
+    top: 14px;
     left: 0;
     transition: 0.4s;
     border: none;
@@ -44,6 +44,7 @@
   &-overlay {
     display: none;
     position: fixed;
+    z-index: 3;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
