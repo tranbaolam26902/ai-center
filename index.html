@@ -13,7 +13,7 @@
     <title>Trí tuệ Nhân tạo và Công nghệ Robot (AIC)</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="index">
       <!-- Start: Sidebar -->
       <nav class="navbar navbar-expand flex-column" id="sidebar">
         <button class="btn btn-primary shadow" id="btn-sidebar">
@@ -51,12 +51,16 @@
               class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
             >
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/about-us.html"
                   >Về chúng tôi</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/officers.html"
                   >Đội ngũ cán bộ</a
                 >
               </li>
@@ -78,32 +82,44 @@
               class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
             >
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/ai-certificate.html"
                   >AI certificate</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/ai-day.html"
                   >AI day</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
-                  >AI experience</a
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/aic-experience.html"
+                  >AIC experience</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/k12-program.html"
                   >Chương trình k12</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/master-trainer.html"
                   >Master trainer</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/robocon.html"
                   >Robocon</a
                 >
               </li>
@@ -125,23 +141,37 @@
               class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
             >
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#">AIBox</a>
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/aibox.html"
+                  >AIBox</a
+                >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/courseware.html"
                   >Bộ tài liệu</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/ukit.html"
                   >Bộ ukit</a
                 >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#">Jimu</a>
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/jimu.html"
+                  >Jimu</a
+                >
               </li>
               <li>
-                <a class="dropdown-item py-2 text-capitalize" href="#"
+                <a
+                  class="dropdown-item py-2 text-capitalize"
+                  href="./html/robot-ai.html"
                   >Robot AI</a
                 >
               </li>
@@ -149,7 +179,7 @@
           </li>
           <li class="nav-item">
             <a
-              href="#"
+              href="./html/news.html"
               class="btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
               data-bs-auto-close="outside"
             >
@@ -161,7 +191,7 @@
           </li>
           <li class="nav-item">
             <a
-              href="#"
+              href="./html/contact.html"
               class="btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
               data-bs-auto-close="outside"
             >
@@ -173,7 +203,7 @@
           </li>
           <li class="nav-item">
             <a
-              href="#"
+              href="./html/register-courses.html"
               class="btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
               data-bs-auto-close="outside"
             >
@@ -255,6 +285,12 @@
         </ul>
       </nav>
       <div id="sidebar-overlay"></div>
+      <div
+        id="btn-scroll-to-top"
+        class="d-flex align-items-center justify-content-center p-2 bg-light border-primary shadow"
+      >
+        <i class="bi bi-chevron-up text-primary fs-5"></i>
+      </div>
       <!-- End: Sidebar -->
       <!-- Start: Page Content -->
       <section id="content">
@@ -278,12 +314,14 @@
                 <div class="row justify-content-md-end gx-0">
                   <a
                     href="#"
-                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign text-primary text-uppercase bg-white border-primary rounded-0 shadow-sm"
+                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign text-primary text-uppercase bg-white border-primary rounded-0 shadow-sm hover-opacity"
+                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign text-primary text-uppercase bg-white border-primary rounded-0 shadow-sm hover-opacity"
                     >Đăng nhập</a
                   >
                   <a
                     href="#"
-                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign ms-2 text-white text-uppercase bg-primary rounded-0 shadow-sm"
+                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign ms-2 text-white text-uppercase bg-primary rounded-0 shadow-sm hover-opacity"
+                    class="col-lg-6 col-md-12 col-sm-12 btn btn-sign ms-2 text-white text-uppercase bg-primary rounded-0 shadow-sm hover-opacity"
                     >Đăng ký</a
                   >
                 </div>
@@ -355,7 +393,8 @@
             <!-- End: Main Carousel -->
             <!-- Start: Tabs -->
             <nav id="tab">
-              <div class="nav nav-tabs d-flex flex-nowrap" id="nav-tab">
+              <!-- Start: Tabs Control -->
+              <div class="nav nav-tabs d-flex flex-nowrap">
                 <button
                   class="nav-link active py-3 text-black border-0 rounded-0"
                   data-bs-toggle="tab"
@@ -392,10 +431,12 @@
                   Thông tin chiêu sinh
                 </button>
               </div>
+              <!-- End: Tabs Control -->
             </nav>
+            <!-- Start: Tabs Content -->
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="aicenter">
-                <div class="row mt-2">
+                <div class="row mt-3">
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="position-relative mb-3">
                       <img
@@ -437,12 +478,198 @@
                     </video>
                   </div>
                 </div>
+                <div class="row mt-3">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h3 class="text-primary text-center">Sứ mệnh</h3>
+                    <div class="roadmap px-5">
+                      <p class="mb-0 pe-5 py-5">
+                        Lan tỏa tỏa niềm yêu thích AI trong học sinh và sinh
+                        viên, nâng cao nhận thức về tầm quan trọng và ứng dụng
+                        của AI trong cộng đồng
+                      </p>
+                      <p class="mb-0 ps-5 py-5">
+                        Bồi dưỡng nguồn nhân lực, nhân tài về AI có chất lượng
+                        cao
+                      </p>
+                      <p class="mb-0 pe-5 py-5">
+                        Nghiên cứu về AI và phát triển các ứng dụng AI cho các
+                        vấn đề thực tế ở địa phương
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 mt-md-0 mt-5">
+                    <h3 class="text-primary text-center">
+                      Tại sao bạn cần trang bị kiến thức về AI?
+                    </h3>
+                    <div class="roadmap px-5">
+                      <p class="mb-0 pe-5 py-5">
+                        Chủ trương, chính sách của nhà nước về lĩnh vực trí tuệ
+                        nhân tạo
+                      </p>
+                      <p class="mb-0 ps-5 py-5">
+                        Hiện trạng phát triển lĩnh vực trí tuệ nhân tạo ở Việt
+                        Nam
+                      </p>
+                      <p class="mb-0 pe-5 py-5">Nhu cầu nguồn nhân lực</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                  <h3 class="text-primary text-center mb-3">
+                    Chức năng, nhiệm vụ của trung tâm
+                  </h3>
+                  <!-- <div class="row mb-5"> -->
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        01
+                      </div>
+                      <p class="mission-content text-justify">
+                        Đào tạo kỹ năng AI cho học sinh, sinh viên, giáo viên,
+                        giảng viên
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        02
+                      </div>
+                      <p class="mission-content text-justify">
+                        Bồi dưỡng kiến thức cập nhật về AI cho giảng viên, giáo
+                        viên, sinh viên, học sinh.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        03
+                      </div>
+                      <p class="mission-content text-justify">
+                        Phối hợp với các Sở giáo dục và Đào tạo, các trường phổ
+                        thông tổ chức các buổi học ngoại khóa/tham quan/trải
+                        nghiệm về AI theo phương pháp tiếp cận STEM
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        04
+                      </div>
+                      <p class="mission-content text-justify">
+                        Tổ chức tập huấn, phổ cập các kiến thức về AI và chuyển
+                        đổi số (như AI, Robotics, Data Science, Internet of
+                        Things (IoT), Cloud computing, 3D printing và ứng dụng)
+                        cho cán bộ, sinh viên toàn trường và cho cộng đồng để
+                        hoà nhập vào lực lượng lao động trong bối cảnh CMCN 4.0
+                        hiện nay
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        05
+                      </div>
+                      <p class="mission-content text-justify">
+                        Tổ chức các buổi seminar, hội thảo về các chủ đề trong
+                        AI như: chuyển đổi số, lớp học thông minh, thành phố
+                        thông minh, ứng dụng AI trong nông nghiệp, công nghệ
+                        sinh học, công nghệ sau thu hoạch
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        06
+                      </div>
+                      <p class="mission-content text-justify">
+                        Nghiên cứu, hợp tác và phát triển ứng dụng AI thực tế,
+                        đặc biệt là các ứng dụng mang tính đặc thù của thành phố
+                        Đà Lạt nói riêng và tỉnh Lâm Đồng nói chung
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        07
+                      </div>
+                      <p class="mission-content text-justify">
+                        Tư vấn về giải pháp về triển khai ứng dụng dựa trên nền
+                        tảng AI cho cơ quan, doanh nghiệp; tư vấn, hỗ trợ khởi
+                        nghiệp về AI
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                    <div class="mission px-3 py-2 h-100 bg-dark rounded-3">
+                      <div class="mission-title h1 text-gray text-end fw-bold">
+                        08
+                      </div>
+                      <p class="mission-content text-justify">
+                        Tạo môi trường kết nối cộng đồng AI trong khu vực
+                      </p>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </div>
               </div>
-              <div class="tab-pane fade" id="introduce"></div>
+              <div class="tab-pane fade" id="introduce">
+                <div class="row mt-3">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <video width="100%" controls autoplay muted>
+                      <source
+                        src="https://aicenter-itp.edu.vn/htdocs/images/assets/img/3D_AIC_small.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="https://aicenter-itp.edu.vn/htdocs/images/assets/img/3D_AIC_small.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h3 class="text-primary text-center">Cơ sở vật chất</h3>
+                    <p class="text-justify">
+                      Trụ sở Trung tâm là mộ khối nhà biệt lập có diện tích sử
+                      dụng khoảng 370m2 nằm trong khuôn viên rộng khoảng 1200m2
+                      trong Trường Đại học Đà Lạt. Khuôn viên xung quanh Trung
+                      tâm xanh, sạch, đẹp, thoáng mát đảm bảo tốt về không gian
+                      học tập làm việc và tiêu chuẩn vệ sinh, phòng bệnh.
+                    </p>
+                    <p class="text-justify">
+                      Tòa nhà có tất cả 3 phòng học, 1 văn phòng, phòng trưng
+                      bày, 1 khu vực trưng bày. Mỗi phòng có sức chứa khoảng 60
+                      học viên mà vẫn đảm bảo diện tích tối thiểu là 1.5m2 cho
+                      mỗi học viên.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="./html/about-us.html"
+                        class="btn btn-primary text-white shadow"
+                        >Tìm hiểu thêm</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3" id="officers">
+                  <h3 class="text-primary text-center text-uppercase">
+                    Đội ngũ cán bộ
+                  </h3>
+                  <div
+                    class="row officers-container justify-content-center mb-5"
+                  ></div>
+                </div>
+              </div>
               <div class="tab-pane fade" id="courses"></div>
               <div class="tab-pane fade" id="courseware"></div>
               <div class="tab-pane fade" id="enrollment"></div>
             </div>
+            <!-- End: Tabs Content -->
             <!-- End: Tabs -->
           </div>
         </div>
@@ -465,7 +692,7 @@
                 <br />
                 <a
                   href="#"
-                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-effect"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
                   id="phone"
                 ></a>
               </div>
@@ -475,7 +702,7 @@
                 <br />
                 <a
                   href="#"
-                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-effect"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
                   id="address"
                 ></a>
               </div>
@@ -485,7 +712,7 @@
                 <br />
                 <a
                   href="#"
-                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-effect"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
                   id="email"
                 ></a>
               </div>
@@ -494,31 +721,31 @@
               <div class="col-12 mb-3">
                 <a
                   href="#"
-                  class="hover-effect mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
                 >
                   <i class="bi bi-facebook text-white"></i>
                 </a>
                 <a
                   href="#"
-                  class="hover-effect mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
                 >
                   <i class="bi bi-twitter text-white"></i>
                 </a>
                 <a
                   href="#"
-                  class="hover-effect mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
                 >
                   <i class="bi bi-google text-white"></i>
                 </a>
                 <a
                   href="#"
-                  class="hover-effect mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
                 >
                   <i class="bi bi-linkedin text-white"></i>
                 </a>
                 <a
                   href="#"
-                  class="hover-effect mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
                 >
                   <i class="bi bi-dribbble text-white"></i>
                 </a>
@@ -534,12 +761,12 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <a
                     href="#"
-                    class="mx-2 p-2 text-white text-capitalize hover-effect"
+                    class="mx-2 p-2 text-white text-capitalize hover-opacity"
                     >Privacy policy</a
                   >
                   <a
                     href="#"
-                    class="mx-2 p-2 text-white text-capitalize hover-effect"
+                    class="mx-2 p-2 text-white text-capitalize hover-opacity"
                     >Terms & conditions</a
                   >
                 </div>
@@ -554,5 +781,6 @@
     </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/officers.js"></script>
   </body>
 </html>

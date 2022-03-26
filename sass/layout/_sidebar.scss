@@ -49,10 +49,13 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
   }
+  .submenu--active a {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
   .logo-container {
     width: 120px;
   }
-  // Start: Sidebar Hover and Click Effect
+  // Start: Sidebar Hover and Click Effects
   .nav-item.active > a {
     background-color: $primary-light !important;
   }
@@ -65,7 +68,7 @@
   .dropdown-toggle.show {
     background-color: $primary-light !important;
   }
-  // End: Sidebar Hover and Click Effect
+  // End: Sidebar Hover and Click Effects
   .dropdown-item {
     position: relative;
     padding-left: 48px;

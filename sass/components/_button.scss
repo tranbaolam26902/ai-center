@@ -1,6 +1,16 @@
 .btn-sign {
   width: 120px;
-  &:hover {
-    filter: brightness(110%);
-  }
+}
+#btn-scroll-to-top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.4s;
+  cursor: pointer;
 }
