@@ -96,6 +96,7 @@
     // Start: Mission hover Effects
     .mission {
       position: relative;
+      transition: 0.4s;
       &-title {
         opacity: 1;
         transition: 0.4s;
@@ -103,17 +104,18 @@
       &-content {
         position: relative;
         top: 0;
-        color: #aaa !important;
+        // color: #aaa !important;
         transition: 0.4s;
       }
       &:hover {
-        background-image: linear-gradient($primary, $dark) !important;
+        border-color: $secondary !important;
+        background-color: $primary-light !important;
         .mission-title {
           opacity: 0;
         }
         .mission-content {
           top: -20px;
-          color: rgba(255, 255, 255, 0.8) !important;
+          color: $white;
         }
       }
     }

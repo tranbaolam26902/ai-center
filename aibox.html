@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://aicenter-itp.edu.vn/htdocs/images/owners/aic/ai-logo-2021-01-1.png"
+    />
+    <title>AIBox</title>
+  </head>
+  <body>
+    <div class="wrapper" id="aibox">
+      <!-- Start: Sidebar -->
+      <nav class="navbar navbar-expand flex-column" id="sidebar">
+        <button class="btn btn-primary shadow" id="btn-sidebar">
+          <i class="bi bi-list fs-5 text-white"></i>
+        </button>
+        <div class="logo-container mx-auto mt-2 mb-3">
+          <img src="./assets/img/logo.png" alt="AICenter" class="w-100" />
+        </div>
+        <ul class="nav flex-column w-100">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="sidebar-link btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-house me-1"></i>
+                Trang chủ
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center px-4 py-2 w-100 text-white text-uppercase border-0 rounded-0"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-info-circle me-1"></i>
+                Giới thiệu
+              </span>
+            </a>
+            <ul
+              class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
+            >
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Về chúng tôi</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Đội ngũ cán bộ</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center px-4 py-2 w-100 text-white text-uppercase border-0 rounded-0"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-box me-1"></i>
+                Khóa học
+              </span>
+            </a>
+            <ul
+              class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
+            >
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >AI certificate</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >AI day</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >AIC experience</a
+                >
+              </li>
+              <li">
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Chương trình k12</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Master trainer</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Robocon</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a
+              href="#"
+              class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center px-4 py-2 w-100 text-white text-uppercase border-0 rounded-0"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-journals me-1"></i>
+                Học liệu
+              </span>
+            </a>
+            <ul
+              class="dropdown-menu overflow-hidden position-relative top-0 m-0 p-0 w-100 border-0 rounded-0"
+            >
+              <li class="submenu--active">
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >AIBox</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Bộ tài liệu</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Bộ ukit</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Jimu</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-link dropdown-item py-2 text-capitalize"
+                  href="#"
+                  >Robot AI</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="sidebar-link btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-megaphone me-1"></i>
+                Chiêu sinh
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="sidebar-link btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-newspaper me-1"></i>
+                Tin tức & sự kiện
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="sidebar-link btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-question-octagon me-1"></i>
+                Liên hệ
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="sidebar-link btn btn-primary d-flex px-4 py-2 text-white text-uppercase border-0 rounded-0"
+              data-bs-auto-close="outside"
+            >
+              <span>
+                <i class="bi bi-journal-text me-1"></i>
+                Đăng ký khóa học
+              </span>
+            </a>
+          </li>
+          <li class="nav-item mb-5 p-4">
+            <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn/htdocs/images/owners/aic/banners/2021/06/itp.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/ippg.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/edigi.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/cohota.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/busmap.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/vnu.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/vnr.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/tug.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="https://aicenter-itp.edu.vn//htdocs/images/owners/aic/banners/2021/06/tma.png"
+                    class="d-block w-100 rounded-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div id="sidebar-overlay"></div>
+      <div
+        id="btn-scroll-to-top"
+        class="d-flex align-items-center justify-content-center p-2 bg-light border-primary shadow"
+      >
+        <i class="bi bi-chevron-up text-primary fs-5"></i>
+      </div>
+      <!-- End: Sidebar -->
+      <!-- Start: Page Content -->
+      <section id="content">
+        <div class="px-md-5">
+          <div class="container">
+            <!-- Start: Header -->
+            <div class="row align-items-center py-3">
+              <!-- Start: Breadcrumb -->
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-md-start justify-content-center"
+              >
+                <a
+                  href="./index.html"
+                  class="mb-2 py-2 text-primary text-capitalize"
+                  >Trang chủ</a
+                >
+                <i class="bi bi-chevron-right py-2 text-primary"></i>
+                <a
+                href="#"
+                class="current-site mb-2 py-2 text-primary text-capitalize"
+              ></a>
+              </div>
+              <!-- End: Breadcrumb -->
+              <!-- Start: Sign In/Sign Up -->
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-md-end justify-content-center"
+              >
+              <div class="sign-in row justify-content-md-end gx-0">
+                <a
+                  href="#"
+                  class="col-lg-6 col-md-12 col-sm-12 btn btn-sign text-primary text-uppercase bg-white border-primary rounded-0 shadow-sm hover-opacity"
+                  >Đăng nhập</a
+                >
+                <a
+                  href="#"
+                  class="col-lg-6 col-md-12 col-sm-12 btn btn-sign ms-2 text-white text-uppercase bg-primary rounded-0 shadow-sm hover-opacity"
+                  >Đăng ký</a
+                >
+                </div>
+              </div>
+              <!-- End: Sign In/Sign Up -->
+            </div>
+            <!-- End: Header -->
+            <!-- Start: AIBox -->
+            <div class="courseware-container">
+              <h2 class="mb-sm-4 text-primary text-center">AIBox</h2>
+              <div class="row mb-5">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <img src="./assets/img/courseware/aibox-1.png" alt="" class="w-100">
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <nav>
+                        <div class="nav nav-tabs border-bottom-0">
+                            <button class="nav-link active text-black border-bottom-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#description">Mô tả</button>
+                            <button class="nav-link text-black border-bottom-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#specification">Thông số kỹ thuật</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content mb-3">
+                        <div class="tab-pane fade show active p-3 pb-0 border border-2 border-primary rounded-left rounded-bottom rounded-right mh-250 overflow-y-auto" id="description">
+                            <p class="text-justify">
+                              AIBox là thiết bị được thiết kế cho việc giảng dạy các lớp học AI, sử dụng nền tảng máy tính NVIDIA AI chính hãng hiệu suất cao. Sử dụng hệ điều hành UOS (dựa trên hệ điều hành Linux), AIBox được cấu hình và cài đặt sẵn những ứng dụng đa dạng như phần mềm lập trình đồ họa uCode, phần mềm giảng dạy Jupyter Lab, phần mềm biên dịch PyCharm, phần mềm demo AI Paradise, Office và các công cụ thông dụng khác, giúp giáo viên và sinh viên dễ dàng trải nghiệm trình biên dịch và thực hành nhiều ứng dụng AI khác nhau.
+                            </p>
+                            <p class="text-justify">
+                              AIBox đồng thời cung cấp các khóa học AI về Học máy (Machine Learning) / Học sâu (Deep Learning), Nhận diện Khuôn mặt (Face Recognition), Nhận dạng Giọng nói (Voice Recognition), v.v. AIBox cũng có thể kết hợp với các sản phẩm khác của UBTECH như RoboGo để mang đến những trải nghiệm ứng dụng AI một cách đa dạng và toàn diện.
+                            </p>
+                            <p class="text-justify">
+                              Phần mềm và phần cứng của AIbox được phát triển đặc biệt cho môi trường giảng dạy AI, với phương thức giảng dạy tích hợp “Dạy, Học, Thực hành và Thi đấu”, nâng cao hiệu quả giảng dạy và học tập.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade p-3 pb-0 border border-2 border-primary rounded-left rounded-bottom rounded-right mh-250 overflow-y-auto" id="specification">
+                          <p>
+                              <span class="fw-bold">GPU: </span>128 CUDA® Core NVIDIA Maxwell 0.5 TFLOPS (FP16)
+                          </p>
+                          <p>
+                              <span class="fw-bold">CPU: </span>Chip lõi tứ cấu trúc ARM A57 @ 1.43 GHz
+                          </p>
+                          <p>
+                              <span class="fw-bold">Bộ nhớ: </span>4 GB 64-bit LPDDR4 25.6 GB/s
+                          </p>
+                          <p>
+                              <span class="fw-bold">Âm thanh: </span>Microsemi, Dual Mic Array / 1W Speaker
+                          </p>
+                          <p>
+                              <span class="fw-bold">Kết nối không dây: </span>WiFi 5G/Bluetooth 5.0
+                          </p>
+                          <p>
+                              <span class="fw-bold">Bộ nhớ: </span>128GB TF
+                          </p>
+                          <p>
+                              <span class="fw-bold">Cổng kết nối: </span>RJ45/USB*4/Micro USB/uKit 3+7pin/DC/DP/HDMI
+                          </p>
+                          <p>
+                              <span class="fw-bold">Pin: </span>Single section 18650 3000mAh (khoảng 1-2 giờ)
+                          </p>
+                          <p>
+                              <span class="fw-bold">Nguồn điện: </span>12V2A
+                          </p>
+                          <p>
+                              <span class="fw-bold">Mức tiêu thụ: </span>5 - 10W
+                          </p>
+                          <p>
+                              <span class="fw-bold">Kích cỡ/Nặng: </span>131mm x 95mm x 48mm / 600g
+                          </p>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-end">
+                        <a href="#" class="px-4 py-3 text-white text-center text-decoration-none bg-primary rounded-2 hover-opacity">Mua hàng</a>
+                    </div>
+                </div>
+              </div>  
+              <div class="row mb-5">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                  <div class="accordion" id="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#feature-1">
+                          Sức mạnh máy tính vượt trội
+                        </button>
+                      </h2>
+                      <div id="feature-1" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                        <div class="accordion-body text-justify">
+                          Được trang bị mạng neural tăng tốc NVIDIA Jetson Nano, sức mạnh tính toán AI của AIBox gấp nhiều lần so với PC, có thể thực sự mô phỏng nhiều tình huống ứng dụng AI bao gồm nhận dạng giọng nói, nhận diện hình ảnh, xe tự vận hành, v.v.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#feature-2">
+                          Kinh nghiệm triển khai toàn bộ dự án AI
+                        </button>
+                      </h2>
+                      <div id="feature-2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body text-justify">
+                          Hàng chục nghìn dữ liệu phổ biến được xây dựng đặc biệt cho việc giảng dạy trên lớp, cho phép sinh viên trải nghiệm quy trình hoàn thiện trong một khoảng thời gian ngắn trong lớp học: thu thập dữ liệu hoàn chỉnh -> đào tạo mô hình -> kết luận mô hình -> lập trình -> gọi mô hình.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#feature-3">
+                          Thuật toán ngoại tuyến cuộc gọi ổn định
+                        </button>
+                      </h2>
+                      <div id="feature-3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body text-justify">
+                          AIBox đã cài đặt sẵn các gói Python chính và các tệp thư viện phổ biến nhằm đơn giản hóa quá trình cài đặt và cấu hình, do đó giúp việc dạy và học trở nên dễ dàng hơn. AI có thể làm tất cả mọi thứ ngoại tuyến, ngoại trừ tương tác bằng giọng nói.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#feature-4">
+                          Tư liệu giảng dạy phong phú
+                        </button>
+                      </h2>
+                      <div id="feature-4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body text-justify">
+                          UBTECH đã phát triển tài liệu chương trình giảng dạy có hệ thống cho cấp tiểu học, trung học cơ sở và trung học phổ thông, bao gồm "AI in Smart Campus", "AI Future Maker" , "AI Exploration Journey” và cuộc thi “Mars Smart Builder" làm nền tảng kết quả học tập (Đang phát triển bản tiếng Anh).
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="w-100">
+                    <img src="./assets/img/courseware/aibox-2.png" alt="" class="w-100">
+                  </div>
+                  <div class="w-100">
+                    <img src="./assets/img/courseware/aibox-3.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <!-- End: AIBox -->
+          </div>
+        </div>
+        <!-- Start: Footer -->
+        <footer class="bg-primary text-white text-center" id="footer">
+          <div class="container">
+            <div class="logo-container mx-auto py-3">
+              <img src="./assets/img/logo.png" alt="AICenter" class="w-100" />
+            </div>
+            <p>
+              Trung tâm Giáo dục Đào tạo Trí tuệ nhân tạo (AIC), Trường Đại học
+              Đà Lạt
+            </p>
+            <hr />
+            <p class="mb-1 fw-bold text-uppercase">Thông tin liên hệ</p>
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                <i class="bi bi-telephone-fill me-1"></i>
+                <span class="text-capitalize">Điện thoại</span>
+                <br />
+                <a
+                  href="#"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
+                  id="phone"
+                ></a>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                <i class="bi bi-geo-alt-fill me-1"></i>
+                <span class="text-capitalize">Địa chỉ</span>
+                <br />
+                <a
+                  href="#"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
+                  id="address"
+                ></a>
+              </div>
+              <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                <i class="bi bi-envelope-fill me-1"></i>
+                <span class="text-capitalize">Email</span>
+                <br />
+                <a
+                  href="#"
+                  class="d-inline-block px-2 pb-2 text-white text-decoration-none hover-opacity"
+                  id="email"
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <a
+                  href="#"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                >
+                  <i class="bi bi-facebook text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                >
+                  <i class="bi bi-twitter text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                >
+                  <i class="bi bi-google text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                >
+                  <i class="bi bi-linkedin text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="hover-opacity mx-2 mt-3 p-2 fs-5 text-decoration-none"
+                >
+                  <i class="bi bi-dribbble text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-secondary">
+            <!-- <div class="container py-4">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  Copyright © 2022. All rights reserved
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <a
+                    href="#"
+                    class="mx-2 p-2 text-white text-capitalize hover-opacity"
+                    >Privacy policy</a
+                  >
+                  <a
+                    href="#"
+                    class="mx-2 p-2 text-white text-capitalize hover-opacity"
+                    >Terms & conditions</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <p class="mb-0 py-3">Copyright © 2022. All rights reserved</p>
+          </div>
+        </footer>
+        <!-- End: Footer -->
+      </section>
+      <!-- End: Page Content -->
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

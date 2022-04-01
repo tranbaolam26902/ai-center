@@ -7,9 +7,50 @@
   }
   &-thumb {
     border-radius: 4px;
-    background-color: $gray-500;
+    background-color: $gray-600;
+    &:hover {
+      background-color: $gray-500;
+    }
+    &:active {
+      background-color: $gray-400;
+    }
   }
 }
+
+.img-center {
+  object-fit: cover;
+  object-position: center;
+}
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+.text-ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.text-ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// Start: Sizing
+.mh-300 {
+  max-height: 300px;
+}
+.mh-250 {
+  max-height: 250px !important;
+}
+// End: Sizing
+
+// Start: Background
 .bg-primary {
   background-color: $primary !important;
 }
@@ -22,15 +63,24 @@
 .bg-gray {
   background-color: $gray-100 !important;
 }
+.bg-gray-darker {
+  background-color: $gray-200;
+}
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
+// End: Background
+
+// Start: Border
 .border-215deg {
   border-top: 2px solid $primary;
   border-right: 2px solid $primary;
   border-bottom: 4px solid $primary;
   border-left: 4px solid $primary;
 }
+// End: Border
+
+// Start: Hover
 .hover-opacity {
   opacity: 1;
   transition: 0.2s;
@@ -54,3 +104,13 @@
     top: -6px;
   }
 }
+.hover-scale {
+  img {
+    transform: scale(1);
+    transition: 0.4s;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+// End: Hover

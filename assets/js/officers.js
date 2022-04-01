@@ -54,7 +54,7 @@ var officer;
 officersInfo.forEach(info => {
   officer = `
     <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-      <div class="card h-100 px-2 py-3 text-white bg-primary rounded-3 text-center">
+      <div class="card h-100 px-2 py-5 text-white bg-primary rounded-3 text-center">
         <div class="card-body it d-flex flex-column justify-content-between align-items-center">
           <img class="avatar mb-3" src="${info.avatar}" />
           <div class="academic mb-2 fw-bold">${info.academic}</div>

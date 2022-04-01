@@ -32,7 +32,7 @@ btnScrollToTop.addEventListener('click', () => {
 const signs = document.querySelector('.sign-in');
 const links = document.querySelectorAll('.sidebar-link');
 if (links && signs) {
-    links[0].href = '../index.html';
+    links[0].href = './index.html';
     links[1].href = './about-us.html';
     links[2].href = './officers.html';
     links[3].href = './ai-certificate.html';
@@ -46,29 +46,36 @@ if (links && signs) {
     links[11].href = './ukit.html';
     links[12].href = './jimu.html';
     links[13].href = './robot-ai.html';
-    links[14].href = './news.html';
-    links[15].href = './contact.html';
-    links[16].href = './register-courses.html';
+    links[14].href = './enrollment.html';
+    links[15].href = './news.html';
+    links[16].href = './contact.html';
+    links[17].href = './register-courses.html';
     signs.children[0].href = './sign-in.html'
     signs.children[1].href = './sign-up.html';
 }
 // End: Link
 
 // Start: Auto Change Breadcrumb
-if (document.querySelector('.current-site')) {
-    document.querySelector('.current-site').innerHTML = document.querySelector('.submenu--active').children[0].innerHTML;
+const currentSite = document.querySelector('.current-site');
+const submenuActive = document.querySelector('.submenu--active');
+if (submenuActive) {
+    currentSite.innerHTML = submenuActive.children[0].innerHTML;
+} else if (currentSite) {
+    currentSite.innerHTML = (document.querySelector('.nav-item.active').innerText).toLowerCase();
+    // currentSite.classList.add('text-capitalize');
 }
 // End: Auto Change Breadcrumb
 
 // Start: Footer Information
 var phoneNumber = '+(84)90-2556-655';
 var address = 'Số 01, đường Phù Đổng Thiên Vương, phường 8, thành phố Đà Lạt, tỉnh Lâm Đồng';
-// var email;
+var email = 'aicenter@gmail.com';
 const footerPhoneNumber = document.querySelector('#phone');
 const footerAddress = document.querySelector('#address');
 const footerEmail = document.querySelector('#email');
 footerPhoneNumber.innerHTML = `${phoneNumber}`;
 footerPhoneNumber.href = `tel:${phoneNumber}`;
 footerAddress.innerHTML = `${address}`;
-footerEmail.innerHTML = `Đang cập nhật`
+footerEmail.innerHTML = `${email}`;
+footerEmail.href = `mailto:${email}`;
 // End: Footer Information

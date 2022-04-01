@@ -1,0 +1,30 @@
+#k12-program {
+  .course-desc {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.6);
+    p {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      transition: 0.4s;
+    }
+  }
+  .show-desc:hover {
+    .course-desc {
+      opacity: 1;
+      p {
+        top: 0;
+      }
+    }
+  }
+}
