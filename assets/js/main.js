@@ -69,7 +69,7 @@ if (submenuActive) {
 // Start: Footer Information
 var phoneNumber = '+(84)90-2556-655';
 var address = 'Số 01, đường Phù Đổng Thiên Vương, phường 8, thành phố Đà Lạt, tỉnh Lâm Đồng';
-var email = 'aicenter@gmail.com';
+var email = 'aicdalat@gmail.com';
 const footerPhoneNumber = document.querySelector('#phone');
 const footerAddress = document.querySelector('#address');
 const footerEmail = document.querySelector('#email');

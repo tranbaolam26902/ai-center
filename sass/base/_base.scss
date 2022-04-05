@@ -113,4 +113,10 @@
     transform: scale(1.1);
   }
 }
+.cursor-pointer {
+  cursor: pointer !important;
+}
 // End: Hover
+.user-select-none {
+  user-select: none !important;
+}

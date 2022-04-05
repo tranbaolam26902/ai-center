@@ -2431,8 +2431,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #66a103;
+  border-color: #66a103;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -10594,12 +10594,6 @@ ul {
   padding-left: 0;
 }
 
-input:focus,
-textarea:focus {
-  border: none;
-  outline: none;
-}
-
 textarea {
   resize: none;
 }
@@ -10721,6 +10715,14 @@ textarea {
 }
 .hover-scale:hover img {
   transform: scale(1.1);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.user-select-none {
+  user-select: none !important;
 }
 
 .text-primary {
@@ -11040,6 +11042,13 @@ h1, .h1, h2, .h2 {
 }
 #aibox .nav-link:hover {
   border-color: #66a103 !important;
+}
+
+#register-course select {
+  border: 1px solid #333;
+}
+#register-course .form-check-input:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=main.css.map */
