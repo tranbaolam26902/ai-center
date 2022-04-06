@@ -429,7 +429,7 @@
                 <button
                   class="nav-link py-3 text-black border-0 rounded-top-1"
                   data-bs-toggle="tab"
-                  data-bs-target="#courseware"
+                  data-bs-target="#documents"
                 >
                   Học liệu
                 </button>
@@ -643,24 +643,37 @@
                     </video>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12">
-                    <h3 class="text-primary text-center">Cơ sở vật chất</h3>
-                    <p class="text-justify">
-                      Trụ sở Trung tâm là mộ khối nhà biệt lập có diện tích sử
-                      dụng khoảng 370m2 nằm trong khuôn viên rộng khoảng 1200m2
-                      trong Trường Đại học Đà Lạt. Khuôn viên xung quanh Trung
-                      tâm xanh, sạch, đẹp, thoáng mát đảm bảo tốt về không gian
-                      học tập làm việc và tiêu chuẩn vệ sinh, phòng bệnh.
-                    </p>
-                    <p class="text-justify">
-                      Tòa nhà có tất cả 3 phòng học, 1 văn phòng, phòng trưng
-                      bày, 1 khu vực trưng bày. Mỗi phòng có sức chứa khoảng 60
-                      học viên mà vẫn đảm bảo diện tích tối thiểu là 1.5m2 cho
-                      mỗi học viên.
-                    </p>
-                    <div class="text-center">
+                    <div
+                      class="d-flex flex-column justify-content-between h-100"
+                    >
+                      <h3 class="text-primary text-center">Cơ sở vật chất</h3>
+                      <div>
+                        <div
+                          class="mb-3 px-3 py-2 bg-white border-215deg rounded-3 shadow-sm user-select-none hover-right"
+                        >
+                          Khuôn viên rông: 1200 m2 trong Trường Đại học Đà Lạt
+                        </div>
+                        <div
+                          class="mb-3 px-3 py-2 bg-white border-215deg rounded-3 shadow-sm user-select-none hover-right"
+                        >
+                          Diện tích sử dụng: 370 m2
+                        </div>
+                        <div
+                          class="mb-3 px-3 py-2 bg-white border-215deg rounded-3 shadow-sm user-select-none hover-right"
+                        >
+                          Tòa nhà có: 3 phòng lab, 1 văn phòng, 1 phòng trưng
+                          bày.
+                        </div>
+                        <div
+                          class="mb-3 px-3 py-2 bg-white border-215deg rounded-3 shadow-sm user-select-none hover-right"
+                        >
+                          Mỗi phòng có sức chứa: 60 học viên (1.5 m2 cho mỗi học
+                          viên)
+                        </div>
+                      </div>
                       <a
                         href="./about-us.html"
-                        class="px-3 py-2 text-white text-decoration-none bg-primary rounded-2 hover-opacity"
+                        class="d-inline-block mx-auto px-3 py-2 text-white text-decoration-none bg-primary rounded-2 hover-opacity"
                         >Tìm hiểu thêm</a
                       >
                     </div>
@@ -699,7 +712,7 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="courseware">
+              <div class="tab-pane fade" id="documents">
                 <h3 class="my-3 text-primary text-center">
                   Tài liệu giảng dạy tại AIC
                 </h3>
@@ -709,7 +722,7 @@
                       class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top"
                     >
                       <img
-                        src="./assets/img/courseware/ai-fantasy-zoo-1.png"
+                        src="./assets/img/courseware/documents/ai-fantasy-zoo-1.png"
                         alt=""
                         class="w-100"
                       />
@@ -741,7 +754,7 @@
                       class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top"
                     >
                       <img
-                        src="./assets/img/courseware/ai-fantasy-zoo-2.png"
+                        src="./assets/img/courseware/documents/ai-fantasy-zoo-2.png"
                         alt=""
                         class="w-100"
                       />
@@ -773,7 +786,7 @@
                       class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top"
                     >
                       <img
-                        src="./assets/img/courseware/ai-smart-life-1.png"
+                        src="./assets/img/courseware/documents/ai-smart-life-1.png"
                         alt=""
                         class="w-100"
                       />
@@ -805,7 +818,7 @@
                       class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top"
                     >
                       <img
-                        src="./assets/img/courseware/ai-smart-life-2.png"
+                        src="./assets/img/courseware/documents/ai-smart-life-2.png"
                         alt=""
                         class="w-100"
                       />
@@ -843,7 +856,9 @@
               </div>
               <div class="tab-pane fade" id="enrollment">
                 <h3 class="my-3 text-primary text-center">Chiêu sinh</h3>
-                <div class="row enrollment-container mb-5"></div>
+                <div
+                  class="row justify-content-center enrollment-container mb-5"
+                ></div>
               </div>
             </div>
             <!-- End: Tabs Content -->

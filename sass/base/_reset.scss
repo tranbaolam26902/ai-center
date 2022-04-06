@@ -14,3 +14,9 @@ ul {
 textarea {
   resize: none;
 }
+select {
+  border: 1px solid #333 !important;
+}
+.form-check-input:focus {
+  box-shadow: none;
+}

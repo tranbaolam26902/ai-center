@@ -32,6 +32,7 @@ btnScrollToTop.addEventListener('click', () => {
 const btnSigns = document.querySelector('.sign-in');
 const sidebarLinks = document.querySelectorAll('.sidebar-link');
 const btnRegisterCourses = document.querySelectorAll('.btn-register-course');
+const btnShop = document.querySelector('.btn-shop');
 const links = [
     './index.html',
     './about-us.html',
@@ -43,7 +44,7 @@ const links = [
     './master-trainer.html',
     './robocon.html',
     './aibox.html',
-    './courseware.html',
+    './documents.html',
     './ukit.html',
     './jimu.html',
     './robot-ai.html',
@@ -63,6 +64,9 @@ if (sidebarLinks && btnSigns) {
     });
     btnSigns.children[0].href = './sign-in.html'
     btnSigns.children[1].href = './sign-up.html';
+}
+if (btnShop) {
+    btnShop.href = 'https://www.facebook.com/aicenter.itp/shop/';
 }
 // End: Links
 

@@ -13,7 +13,7 @@
     <title>Jimu</title>
   </head>
   <body>
-    <div class="wrapper" id="jimu">
+    <div class="wrapper" id="products">
       <!-- Start: Sidebar -->
       <nav class="navbar navbar-expand flex-column" id="sidebar">
         <button class="btn btn-primary shadow" id="btn-sidebar">
@@ -346,7 +346,46 @@
               <!-- End: Sign In/Sign Up -->
             </div>
             <!-- End: Header -->
+            <!-- Start: Jimu -->
             <h2 class="mb-4 text-primary text-center">Jimu</h2>
+            <div class="row mb-5">
+              <div class="col-lg-6 col-md-12 col-sm-12 mb-2  mb-lg-0">
+                <div class="position-relative overflow-hidden border border-primary border-2 rounded">
+                  <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center w-100px h-100 cursor-pointer hover-opacity" id="btn-previous">
+                    <span class="fs-2 text-primary">
+                      <i class="bi bi-chevron-left"></i>
+                    </span>
+                  </div>
+                  <img src="" alt="" class="w-100" id="product-img">
+                  <div class="position-absolute top-0 end-0 d-flex justify-content-center align-items-center w-100px h-100 cursor-pointer hover-opacity" id="btn-forward">
+                    <span class="fs-2 text-primary">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h3 class="text-primary fw-bold text-uppercase" id="product-name"></h3>
+                <nav>
+                  <div class="nav nav-tabs border-bottom-0">
+                      <button class="nav-link active text-black border-bottom-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#description">Mô tả</button>
+                      <button class="nav-link text-black border-bottom-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#specification">Thông số kỹ thuật</button>
+                  </div>
+                </nav>
+                <div class="tab-content mb-3">
+                    <div class="tab-pane fade show active p-3 pb-0 border border-2 border-primary rounded-left rounded-bottom rounded-right mh-250 overflow-y-auto" id="description">
+                      <p class="description text-justify"></p>
+                    </div>
+                    <div class="tab-pane fade p-3 pb-0 border border-2 border-primary rounded-left rounded-bottom rounded-right mh-250 overflow-y-auto" id="specification">
+                      <div class="specification text-justify"></div>
+                    </div>
+                </div>
+                <div class="mt-4 text-end">
+                  <a href="#" target="_blank" class="btn-shop px-5 py-3 text-white text-uppercase text-decoration-none bg-primary rounded-1 hover-opacity">Mua hàng</a>
+                </div>
+              </div>
+            </div>
+            <!-- End: Jimu -->
           </div>
         </div>
         <!-- Start: Footer -->
@@ -457,5 +496,7 @@
     </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jimu.js"></script>
+    <script src="./assets/js/products.js"></script>
   </body>
 </html>

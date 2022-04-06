@@ -10598,6 +10598,14 @@ textarea {
   resize: none;
 }
 
+select {
+  border: 1px solid #333 !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -10719,10 +10727,6 @@ textarea {
 
 .cursor-pointer {
   cursor: pointer !important;
-}
-
-.user-select-none {
-  user-select: none !important;
 }
 
 .text-primary {
@@ -11035,20 +11039,16 @@ h1, .h1, h2, .h2 {
   top: 0;
 }
 
-#aibox .nav-link.active {
+#products .nav-link.active {
   color: #fff !important;
   background-color: #66a103;
   border-color: #66a103;
 }
-#aibox .nav-link:hover {
+#products .nav-link:hover {
   border-color: #66a103 !important;
 }
-
-#register-course select {
-  border: 1px solid #333;
-}
-#register-course .form-check-input:focus {
-  box-shadow: none;
+#products .w-100px {
+  width: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

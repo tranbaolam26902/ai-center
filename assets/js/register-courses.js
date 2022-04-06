@@ -59,7 +59,7 @@ const programsInfo = [
                     'Thứ 7 (8h30-16h)',
                     'CN (8h30-16h)',
                     'Các ngày trong tuần (8h30-16h)',
-                ],    
+                ],
                 'price': '430.000đ'
             },
             {
@@ -68,14 +68,14 @@ const programsInfo = [
                     'Thứ 7 (8h30-16h)',
                     'CN (8h30-16h)',
                     'Các ngày trong tuần (8h30-16h)',
-                ],    
+                ],
                 'price': '430.000đ'
             },
             {
                 'name': '1 bài giảng AI Transformer Wokshop hoặc AI Magic World + trải nghiệm robot',
                 'schedules': [
                     'Thứ 3 (8h30-16h)'
-                ],    
+                ],
                 'price': '430.000đ'
             },
             {
@@ -216,7 +216,7 @@ function UpdateStudentInfoHTML() {
                 </span>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12 ps-lg-1">
-                <select class="form-select d-block px-3 py-2 w-100 bg-white border-1 rounded-1 shadow-sm cursor-pointer" id="program-${studentID}"></select>
+                <select class="form-select d-block px-3 py-2 w-100 bg-white rounded-1 shadow-sm cursor-pointer" id="program-${studentID}"></select>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -239,10 +239,10 @@ function AddPrograms() {
     let program = document.querySelector(`#program-${studentID}`);
     if (program) {
         programsInfo.forEach(info => {
-        let option = document.createElement('option');
-        option.innerText = info.name;
-        option.value = info.name;
-        program.appendChild(option);
+            let option = document.createElement('option');
+            option.innerText = info.name;
+            option.value = info.name;
+            program.appendChild(option);
         });
     }
     // End: Create Program options
@@ -250,11 +250,11 @@ function AddPrograms() {
     let coursesContainer = document.querySelector(`#courses-container-${studentID}`);
     let CourseID = studentID - 1;
     program.value = '';
-    program.addEventListener('change', ()=> {
+    program.addEventListener('change', () => {
         coursesContainer.innerHTML = '';
         programsInfo.forEach((info, infoIndex) => {
             let courseHTML;
-            if(program.value === info.name) {
+            if (program.value === info.name) {
                 info.courses.forEach((course, courseIndex) => {
                     courseHTML = `
                         <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
@@ -266,7 +266,7 @@ function AddPrograms() {
                             <div class="row d-none" id="schedule-course-${CourseID}-${infoIndex}-${courseIndex}">
                     `;
                     course.schedules.forEach((schedule, scheduleIndex) => {
-                            courseHTML += `
+                        courseHTML += `
                                 <div class="col-6">
                                     <input type="radio" class="form-check-input cursor-pointer" name="case-course-${CourseID}-${infoIndex}-${courseIndex}" id="case-${CourseID}-${infoIndex}-${courseIndex}-${scheduleIndex}" value="${schedule}">
                                     <label for="case-${CourseID}-${infoIndex}-${courseIndex}-${scheduleIndex}" class="form-check-label cursor-pointer user-select-none">${schedule}</label>
@@ -277,8 +277,8 @@ function AddPrograms() {
                             </div>
                         </div>
                     `;
-                    coursesContainer.innerHTML += courseHTML; 
-                }); 
+                    coursesContainer.innerHTML += courseHTML;
+                });
             }
         });
         // End: Change Courses List when change Program
@@ -306,5 +306,26 @@ function AddPrograms() {
     });
 }
 //#endregion End: Show/Hide Programs and Courses
+//#region Start: Print Register Result
+var registerForm = document.querySelector('#register-form');
+// registerForm.addEventListener('submit', () => {
+//     let parentName = document.querySelector('#parent-name');
+//     let emailAddress = document.querySelector('#email-address');
+//     let phoneNumber = document.querySelector('#phone-number');
+//     let studentNames = document.querySelectorAll(`#student-name-${studentID}`);
+
+//     let parentNameResult = document.querySelector('#parent-name-result');
+//     let emailAddressResult = document.querySelector('#email-address-result');
+//     let phoneNumberResult = document.querySelector('#phone-number-result');
+
+//     const result = document.querySelector('#result');
+//     parentNameResult.innerHTML = parentName.value;
+//     emailAddressResult.innerHTML = emailAddress.value;
+//     phoneNumberResult.innerHTML = phoneNumber.value;
+//     registerForm.classList.add('d-none');
+//     result.classList.remove('d-none');
+
+// });
+//#endregion End: Print Register Result
 // Add 1st student form after page load
 AddStudent();

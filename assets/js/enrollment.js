@@ -12,8 +12,8 @@ const enrollmentContainer = document.querySelector('.enrollment-container');
 var enrollment;
 enrollmentInfo.forEach(info => {
     enrollment = `
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <a href="${info.link}">
+        <div class="col-lg-5 col-md-6 col-sm-12 mb-3">
+            <a href="${info.link}" class="hover-top">
                 <img src="${info.img}" alt="" class="w-100 rounded-2 shadow">
             </a>
         </div>
