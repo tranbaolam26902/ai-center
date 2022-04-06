@@ -259,7 +259,7 @@ function AddPrograms() {
                     courseHTML = `
                         <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
                             <input type="checkbox" class="form-check-input cursor-pointer" id="course-${CourseID}-${infoIndex}-${courseIndex}">
-                            <label for="course-${CourseID}-${infoIndex}-${courseIndex}" class="text-justify user-select-none">${course.name}</label>
+                            <label for="course-${CourseID}-${infoIndex}-${courseIndex}" class="text-justify cursor-pointer user-select-none">${course.name}</label>
                             <div><span class="fw-bold">Giá: </span>${course.price}</div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 mb-3">

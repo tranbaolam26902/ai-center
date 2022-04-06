@@ -4,14 +4,14 @@ const coursesInfo = [
         'img': './assets/img/index/robot-hand.jpg',
         'name': 'AI Day',
         'classRequirement': 'Học sinh phổ thông (lớp 1 - lớp 12)',
-        'period': '02 - 03 giờ'
+        'period': '01 ngày'
     },
     {
         'link': './aic-experience.html',
         'img': './assets/img/index/robot-hand.jpg',
         'name': 'AI Experience',
         'classRequirement': 'Học sinh phổ thông (lớp 1 - lớp 12)',
-        'period': '02 - 03 giờ'
+        'period': '03 giờ'
     },
     {
         'link': './k12-program.html',
@@ -39,7 +39,7 @@ const coursesContainer = document.querySelector('.courses-container');
 var course;
 coursesInfo.forEach(info => {
     course = `
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
             <a href="${info.link}" class="d-block p-4 text-black text-decoration-none bg-white rounded-2 shadow hover-scale">
                 <div class="overflow-hidden rounded-3">
                     <img src="${info.img}" alt="" class="img-center w-100"/>

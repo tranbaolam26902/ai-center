@@ -10868,7 +10868,7 @@ h1, .h1, h2, .h2 {
 #content {
   transition: margin 0.4s;
 }
-@media (max-width: 574px) {
+@media (max-width: 768px) {
   #content {
     position: absolute;
     top: 0;
@@ -10878,7 +10878,7 @@ h1, .h1, h2, .h2 {
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 768px) {
   .sidebar-overlay--show {
     display: block !important;
   }

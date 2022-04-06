@@ -28,32 +28,43 @@ btnScrollToTop.addEventListener('click', () => {
 })
 // End: Button Scroll To Top
 
-// Start: Link
-const signs = document.querySelector('.sign-in');
-const links = document.querySelectorAll('.sidebar-link');
-if (links && signs) {
-    links[0].href = './index.html';
-    links[1].href = './about-us.html';
-    links[2].href = './officers.html';
-    links[3].href = './ai-certificate.html';
-    links[4].href = './ai-day.html';
-    links[5].href = './aic-experience.html';
-    links[6].href = './k12-program.html';
-    links[7].href = './master-trainer.html';
-    links[8].href = './robocon.html';
-    links[9].href = './aibox.html';
-    links[10].href = './courseware.html';
-    links[11].href = './ukit.html';
-    links[12].href = './jimu.html';
-    links[13].href = './robot-ai.html';
-    links[14].href = './enrollment.html';
-    links[15].href = './news.html';
-    links[16].href = './contact.html';
-    links[17].href = './register-courses.html';
-    signs.children[0].href = './sign-in.html'
-    signs.children[1].href = './sign-up.html';
+// Start: Links
+const btnSigns = document.querySelector('.sign-in');
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
+const btnRegisterCourses = document.querySelectorAll('.btn-register-course');
+const links = [
+    './index.html',
+    './about-us.html',
+    './officers.html',
+    './ai-certificate.html',
+    './ai-day.html',
+    './aic-experience.html',
+    './k12-program.html',
+    './master-trainer.html',
+    './robocon.html',
+    './aibox.html',
+    './courseware.html',
+    './ukit.html',
+    './jimu.html',
+    './robot-ai.html',
+    './enrollment.html',
+    './news.html',
+    './contact.html',
+    './register-courses.html'
+];
+if (btnRegisterCourses) {
+    btnRegisterCourses.forEach(btn => {
+        btn.href = './register-courses.html';
+    });
 }
-// End: Link
+if (sidebarLinks && btnSigns) {
+    sidebarLinks.forEach((sidebarLink, index) => {
+        sidebarLink.href = links[index];
+    });
+    btnSigns.children[0].href = './sign-in.html'
+    btnSigns.children[1].href = './sign-up.html';
+}
+// End: Links
 
 // Start: Auto Change Breadcrumb
 const currentSite = document.querySelector('.current-site');

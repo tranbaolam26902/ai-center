@@ -103,17 +103,17 @@
 }
 #content {
   transition: margin 0.4s;
-  // Start: Send Content to Back Sidebar
-  @media (max-width: 574px) {
+  // Start: Send Content to Back Sidebar for Mobiles and Tablets
+  @media (max-width: 768px) {
     position: absolute;
     top: 0;
     left: 0;
     margin-left: 0;
     width: 100vw;
   }
-  // End: Send Content to Back SideBar
+  // End: Send Content to Back Sidebar for Mobiles and Tablets
 }
-@media (max-width: 574px) {
+@media (max-width: 768px) {
   .sidebar-overlay--show {
     display: block !important;
   }
