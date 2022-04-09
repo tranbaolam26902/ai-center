@@ -20,21 +20,21 @@ coursesInfo.forEach(course => {
     let courseHTML = `
         <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
             <div class="p-3 h-100 bg-white rounded-1 shadow hover-top">
-            <h4 class="text-center">${course.name}</h4>
-            <hr />
-            <p>
-                <span class="text-primary fw-bold">
-                <i class="bi bi-person-bounding-box me-1"></i>Đối
-                tượng:
-                </span>
-                ${course.ageRequirement}
-            </p>
-            <p class="mb-1">
-                <span class="text-primary fw-bold">
-                <i class="bi bi-book me-1"></i>Nội dung chính:
-                </span>
-                ${course.content}
-            </p>
+                <h4 class="text-center">${course.name}</h4>
+                <hr />
+                <p>
+                    <span class="text-primary fw-bold">
+                    <i class="bi bi-person-bounding-box me-1"></i>Đối
+                    tượng:
+                    </span>
+                    ${course.ageRequirement}
+                </p>
+                <p class="mb-1">
+                    <span class="text-primary fw-bold">
+                    <i class="bi bi-book me-1"></i>Nội dung chính:
+                    </span>
+                    ${course.content}
+                </p>
             </div>
         </div>
     `;

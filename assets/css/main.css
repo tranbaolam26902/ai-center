@@ -10737,16 +10737,8 @@ select {
   text-align: justify !important;
 }
 
-.text-gray {
-  color: #6c757d;
-}
-
 h1, .h1, h2, .h2 {
   text-transform: uppercase;
-}
-
-.h7 {
-  font-size: 14px;
 }
 
 .btn-sign {

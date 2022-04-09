@@ -50,9 +50,8 @@ const officersInfo = [
   },
 ];
 const officersContainer = document.querySelector('.officers-container');
-var officer;
 officersInfo.forEach(info => {
-  officer = `
+  let officerHTML = `
     <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
       <div class="card h-100 px-2 py-5 text-white bg-primary rounded-3 text-center">
         <div class="card-body it d-flex flex-column justify-content-between align-items-center">
@@ -64,6 +63,6 @@ officersInfo.forEach(info => {
         </div>
       </div>
     </div>
-  `
-  officersContainer.innerHTML += officer;
+  `;
+  officersContainer.innerHTML += officerHTML;
 });

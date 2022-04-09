@@ -9,14 +9,13 @@ const enrollmentInfo = [
     }
 ];
 const enrollmentContainer = document.querySelector('.enrollment-container');
-var enrollment;
 enrollmentInfo.forEach(info => {
-    enrollment = `
+    let enrollmentHTML = `
         <div class="col-lg-5 col-md-6 col-sm-12 mb-3">
             <a href="${info.link}" class="hover-top">
                 <img src="${info.img}" alt="" class="w-100 rounded-2 shadow">
             </a>
         </div>
     `;
-    enrollmentContainer.innerHTML += enrollment;
+    enrollmentContainer.innerHTML += enrollmentHTML;
 });

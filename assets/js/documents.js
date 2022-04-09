@@ -86,9 +86,8 @@ const documentsInfo = [
     },
 ];
 const documentsContainer = document.querySelector('.documents-container');
-var documentHTML;
 documentsInfo.forEach(info => {
-    documentHTML = `
+    let documentHTML = `
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
             <div class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top">
                 <img src="${info.img}" alt="" class="w-100">

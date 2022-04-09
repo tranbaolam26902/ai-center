@@ -73,9 +73,8 @@ const coursesInfo = [
     // }
 ];
 const coursesContainer = document.querySelector('.courses-container');
-var course;
 coursesInfo.forEach(info => {
-    course = `
+    let courseHTML = `
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="show-desc p-3 h-100 rounded-2 shadow">
                 <div class="overflow-hidden position-relative rounded-2">
@@ -100,6 +99,6 @@ coursesInfo.forEach(info => {
                 </div>
             </div>
         </div>
-    `
-    coursesContainer.innerHTML += course;
+    `;
+    coursesContainer.innerHTML += courseHTML;
 });

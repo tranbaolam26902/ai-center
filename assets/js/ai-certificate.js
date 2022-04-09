@@ -131,9 +131,8 @@ const certificatesInfo = [
     },
 ];
 const certificatesContainer = document.querySelector('.certificates-container');
-var certificate;
 certificatesInfo.forEach(info => {
-  certificate = `
+  let certificateHTML = `
     <div class="col-lg-6 col-md-12 col-sm-12 mb-3 px-2">
       <div class="d-flex justify-content-between p-2 h-100 bg-white border-215deg rounded-2 hover-right">
         <div class="col-9">
@@ -147,5 +146,5 @@ certificatesInfo.forEach(info => {
       </div>
     </div>
   `;
-  certificatesContainer.innerHTML += certificate;
+  certificatesContainer.innerHTML += certificateHTML;
 });

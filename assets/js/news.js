@@ -70,9 +70,8 @@ const eventsInfo = [
 const newsContainer = document.querySelector('.news-container');
 const hotNewsContainer = document.querySelector('.hot-news-container');
 const eventsContainer = document.querySelector('.events-container');
-var news, hotNews, newEvent;
 newsInfo.forEach(info => {
-    news = `
+    let newsHTML = `
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <a href="${info.link}" class="d-block overflow-hidden w-100 h-100 text-black text-decoration-none bg-white rounded-2 shadow-sm hover-scale">
                 <div class="overflow-hidden">
@@ -86,10 +85,10 @@ newsInfo.forEach(info => {
             </a>
         </div>
     `;
-    newsContainer.innerHTML += news;
+    newsContainer.innerHTML += newsHTML;
 });
 hotNewsInfo.forEach((info, index) => {
-    hotNews = `
+    let hotNewsHTML = `
         <a href="${info.link}" class="d-flex mb-3 p-3 text-black text-decoration-none bg-white rounded-2 shadow-sm hover-right">
             <div class="h4 ms-3 me-4 text-primary fw-bold">${index + 1}</div>
             <div class="flex-fill">
@@ -98,10 +97,10 @@ hotNewsInfo.forEach((info, index) => {
             </div>
         </a>
     `;
-    hotNewsContainer.innerHTML += hotNews;
+    hotNewsContainer.innerHTML += hotNewsHTML;
 });
 eventsInfo.forEach((info, index) => {
-    newEvent = `
+    let newEventHTML = `
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <a href="${info.link}" class="d-block overflow-hidden w-100 h-100 text-black text-decoration-none bg-white rounded-2 shadow-sm hover-scale">
                 <div class="overflow-hidden">
@@ -120,5 +119,5 @@ eventsInfo.forEach((info, index) => {
             </a>
         </div>
     `;
-    eventsContainer.innerHTML += newEvent;
+    eventsContainer.innerHTML += newEventHTML;
 });

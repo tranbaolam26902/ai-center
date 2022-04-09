@@ -77,7 +77,6 @@ if (submenuActive) {
     currentSite.innerHTML = submenuActive.children[0].innerHTML;
 } else if (currentSite) {
     currentSite.innerHTML = (document.querySelector('.nav-item.active').innerText).toLowerCase();
-    // currentSite.classList.add('text-capitalize');
 }
 // End: Auto Change Breadcrumb
 
