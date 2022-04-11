@@ -90,6 +90,8 @@ const footerEmail = document.querySelector('#email');
 footerPhoneNumber.innerHTML = `${phoneNumber}`;
 footerPhoneNumber.href = `tel:${phoneNumber}`;
 footerAddress.innerHTML = `${address}`;
+footerAddress.href = 'https://g.page/DalatUniversity?share';
+footerAddress.setAttribute('target', '_blank');
 footerEmail.innerHTML = `${email}`;
 footerEmail.href = `mailto:${email}`;
 // End: Footer Information
