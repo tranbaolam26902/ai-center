@@ -10949,6 +10949,7 @@ h1, .h1, h2, .h2 {
 }
 #index .tab-content .roadmap p:nth-child(3) {
   position: relative;
+  margin-left: 33px;
   text-align: end;
   border-top-right-radius: 30px;
   border-right: 5px dashed #66a103;
