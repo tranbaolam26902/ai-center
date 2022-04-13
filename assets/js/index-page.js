@@ -3,22 +3,22 @@ const coursesInfo = [
         'link': './ai-day.html',
         'img': './assets/img/index/robot-hand.jpg',
         'name': 'AI Day',
-        'classRequirement': 'Học sinh phổ thông (lớp 1 - lớp 12)',
+        'classRequirement': '08 - 15 tuổi',
         'period': '01 ngày'
     },
     {
         'link': './aic-experience.html',
         'img': './assets/img/index/robot-hand.jpg',
         'name': 'AI Experience',
-        'classRequirement': 'Học sinh phổ thông (lớp 1 - lớp 12)',
-        'period': '03 giờ'
+        'classRequirement': '08 - 15 tuổi',
+        'period': '01 buổi'
     },
     {
         'link': './k12-program.html',
         'img': './assets/img/index/robot-hand.jpg',
-        'name': 'Chương trình K12',
-        'classRequirement': 'Học sinh phổ thông (lớp 1 - lớp 12)',
-        'period': '~ 60 tiết'
+        'name': 'Các lớp dài hạn',
+        'classRequirement': '08 - 15 tuổi',
+        'period': '32 tiết, kéo dài 8 tuần'
     },
     {
         'link': './master-trainer.html',
@@ -28,12 +28,12 @@ const coursesInfo = [
         'period': 'Đang cập nhât'
     },
     {
-        'link': './robocon.html',
+        'link': './ai-talents.html',
         'img': './assets/img/index/robot-hand.jpg',
-        'name': 'Robocon',
+        'name': 'AI Talents',
         'classRequirement': 'Đang cập nhật',
         'period': 'Đang cập nhật'
-    }
+    },
 ];
 const coursesContainer = document.querySelector('.courses-container');
 coursesInfo.forEach(info => {

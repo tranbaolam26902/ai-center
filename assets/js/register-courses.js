@@ -2,7 +2,7 @@ var studentID = 1;
 var studentInfoHTML;
 const programsInfo = [
     {
-        'name': 'Chương trình K12',
+        'name': 'Các lớp dài hạn',
         'courses': [
             {
                 'name': 'AI Fantasy Zoo',

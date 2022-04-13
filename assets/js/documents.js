@@ -86,16 +86,17 @@ const documentsInfo = [
     },
 ];
 const documentsContainer = document.querySelector('.documents-container');
-documentsInfo.forEach(info => {
+var indexPage = document.querySelector('#index');
+for (let i = 0; i < documentsInfo.length; i++) {
     let documentHTML = `
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
             <div class="d-flex flex-column overflow-hidden h-100 bg-white rounded-2 shadow hover-top">
-                <img src="${info.img}" alt="" class="w-100">
+                <img src="${documentsInfo[i].img}" alt="" class="w-100">
                 <div class="d-flex flex-column justify-content-between flex-fill px-3 py-2 text-center text-center">
-                    <h4 class="text-primary text-capitalize">${info.name}</h4>
+                    <h4 class="text-primary text-capitalize">${documentsInfo[i].name}</h4>
                     <div>
                         <div>`
-                            for (let i = 0 ; i < info.rating; i++) {
+                            for (let i = 0 ; i < documentsInfo[i].rating; i++) {
                                 documentHTML += `<i class="bi bi-star-fill text-warning"></i>`;
                             };
                             documentHTML +=
@@ -107,4 +108,17 @@ documentsInfo.forEach(info => {
         </div>
     `;
     documentsContainer.innerHTML += documentHTML;
-});
+    // Start: Show Only 4 Documents in Index Page
+    if (indexPage && i === 3) {
+        let btnViewMoreContainer = document.createElement('div');
+        btnViewMoreContainer.className = 'text-center mt-3';
+        let btnViewMore = document.createElement('a');
+        btnViewMore.href = './documents.html';
+        btnViewMore.className = 'px-4 py-2 text-white text-decoration-none bg-primary rounded-2 shadow hover-opacity';
+        btnViewMore.innerHTML = 'Xem thêm';
+        btnViewMoreContainer.appendChild(btnViewMore);
+        documentsContainer.appendChild(btnViewMoreContainer);
+        i = documentsInfo.length;
+    }
+    // End: Show Only 4 Documents in Index Page
+}

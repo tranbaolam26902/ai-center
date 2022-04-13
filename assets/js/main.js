@@ -42,7 +42,7 @@ const links = [
     './aic-experience.html',
     './k12-program.html',
     './master-trainer.html',
-    './robocon.html',
+    './ai-talents.html',
     './aibox.html',
     './documents.html',
     './ukit.html',
@@ -64,6 +64,7 @@ if (sidebarLinks && btnSigns) {
     });
     btnSigns.children[0].href = './sign-in.html'
     btnSigns.children[1].href = './sign-up.html';
+    btnSigns.children[1].classList.add('d-none');
 }
 if (btnShop) {
     btnShop.href = 'https://www.facebook.com/aicenter.itp/shop/';

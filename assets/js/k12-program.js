@@ -4,7 +4,7 @@ const coursesInfo = [
         'name': 'Fantasy Zoo',
         'courseware': 'Fantasy Zoo (2 tập, 32 tiết/tập)',
         'classRequire': '8 - 12 tuổi (hoặc đã có kinh nghiệm lắp ráp lego)',
-        'cost': '1.400.000',
+        'cost': '1.750.000',
         'desc': 'Khóa học này áp dụng phương pháp làm việc nhóm để giúp học viên khám phá các phương pháp xây dựng các mô hình động vật khác nhau và có được kiến thức lập trình cơ bản để mô phỏng hành vi và cách thức của các loài động vật khác nhau. Một mặt, nó giúp học sinh hiểu sự việc và giải quyết vấn đề từ nhiều chiều. Mặt khác, nó củng cố khả năng giao tiếp, diễn đạt và chia sẻ của học sinh.'
     },
     {
@@ -12,7 +12,7 @@ const coursesInfo = [
         'name': 'Smart Life',
         'courseware': 'Smart Life (2 tập, 32 tiết/tập)',
         'classRequire': '9 - 12 tuổi (hoặc đã có kinh nghiệm lắp ráp lego)',
-        'cost': '1.400.000',
+        'cost': '1.750.000',
         'desc': 'Học viên trong khóa học có thể quan sát và hiểu được nguyên lý hoạt động và các kịch bản ứng dụng của nhiều loại cảm biến thông dụng khác nhau, bao gồm cảm biến âm thanh, cảm biến hồng ngoại, cảm biến nhiệt độ và độ ẩm, cảm biến cảm ứng, cảm biến khoảng cách hồng ngoại, v.v … Với hình thức hợp tác nhóm, học viên sẽ hoàn thành nhiều dự án thiết thực như thùng rác thông minh, khu vườn thông minh, giá treo quần áo thông minh, xe quét rác thông minh và hiểu được những thay đổi của cuộc sống do khoa học và công nghệ tạo ra.'
     },
     {
@@ -20,7 +20,7 @@ const coursesInfo = [
         'name': 'Astrobot',
         'courseware': 'Astrobot (2 bản Việt - Anh, 28 tiết/tập)',
         'classRequire': '11 - 14 tuổi',
-        'cost': '1.500.000',
+        'cost': '1.850.000',
         'desc': 'Học sinh sẽ xây dựng thị trấn tương lai của chúng ta với vai trò là những nhà thiết kế. Học sinh cũng sẽ hiểu ứng dụng của AI và biết cách gọi API của nhận dạng khuôn mặt, giao tiếp bằng giọng nói và nhận dạng hình ảnh.'
     },
     {
@@ -28,7 +28,7 @@ const coursesInfo = [
         'name': 'Transformer',
         'courseware': 'Transformer (2 tập, 30 tiết/tập)',
         'classRequire': '11 - 14 tuổi',
-        'cost': '1.500.000',
+        'cost': '1.850.000',
         'desc': 'Khóa học này áp dụng phương pháp làm việc nhóm để giúp học viên khám phá các phương pháp xây dựng các mô hình động vật khác nhau và có được kiến thức lập trình cơ bản để mô phỏng hành vi và cách thức của các loài động vật khác nhau. Một mặt, nó giúp học sinh hiểu sự việc và giải quyết vấn đề từ nhiều chiều. Mặt khác, nó củng cố khả năng giao tiếp, diễn đạt và chia sẻ của học sinh.'
     },
     // {
@@ -76,7 +76,7 @@ const coursesContainer = document.querySelector('.courses-container');
 coursesInfo.forEach(info => {
     let courseHTML = `
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="show-desc p-3 h-100 rounded-2 shadow">
+            <div class="show-desc d-flex flex-column p-3 h-100 rounded-2 shadow">
                 <div class="overflow-hidden position-relative rounded-2">
                     <img src="${info.img}" class="w-100"/>
                     <div class="course-desc">
@@ -85,17 +85,22 @@ coursesInfo.forEach(info => {
                         </p>
                     </div>
                 </div>
-                <div class="d-flex flex-column justify-content-between p-2 pb-0">
-                    <h5 class="text-primary text-center">${info.name}</h5>
-                    <p>
-                        <span class="fw-bold">Giáo trình: </span>${info.courseware}
-                    </p>
-                    <p>
-                        <span class="fw-bold">Đối tượng (tối thiểu): </span>${info.classRequire}
-                    </p>
-                    <p class="mb-1">
-                        <span class="fw-bold">Học phí: </span>${info.cost}<sup>đ</sup>
-                    </p>
+                <div class="d-flex flex-column justify-content-between flex-grow-1 p-2 pb-0">
+                    <div class="mb-3">
+                        <h5 class="mb-2 text-primary text-center text-uppercase fw-bold">${info.name}</h5>
+                        <p class="mb-2">
+                            <span class="fw-bold">Giáo trình: </span>${info.courseware}
+                        </p>
+                        <p class="mb-2">
+                            <span class="fw-bold">Đối tượng (tối thiểu): </span>${info.classRequire}
+                        </p>
+                        <p class="mb-2">
+                            <span class="fw-bold">Học phí: </span>${info.cost}<sup>đ</sup>
+                        </p>
+                    </div>
+                    <div class="mb-2 text-center">
+                        <a href="./register-courses.html" class="px-4 py-2 text-white text-decoration-none bg-primary rounded-2 shadow hover-opacity">ĐĂNG KÝ NGAY</a>
+                    </div>
                 </div>
             </div>
         </div>
